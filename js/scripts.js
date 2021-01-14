@@ -23,3 +23,13 @@ $(document).ready(function() {
 	$("#output").text(result);
 	});
 });
+
+$(document).ready(function() {
+	$("form#subtract").submit(function(event) {
+		event.preventDefault();
+		const number1=parseInt($("#subtract1").val());
+		const number2=parseInt($("#subtract2").val());
+		const result = subtract(number1, number2);
+		$("#output1").text(result);
+	});
+});
